@@ -1,19 +1,41 @@
-// Update this page (the content is just a fallback if you fail and example)
-// Use chakra-ui
-import { Container, Text, VStack } from "@chakra-ui/react";
-
-// Example of using react-icons
-// import { FaRocket } from "react-icons/fa";
-// <IconButton aria-label="Add" icon={<FaRocket />} size="lg" />; // IconButton would also have to be imported from chakra
+import { Box, Container, Text, VStack, Image, Heading } from "@chakra-ui/react";
 
 const Index = () => {
   return (
-    <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
-      <VStack spacing={4}>
-        <Text fontSize="2xl">Your Blank Canvas</Text>
-        <Text>Chat with the agent to start making edits.</Text>
-      </VStack>
-    </Container>
+    <Box>
+      <Box
+        height="100vh"
+        backgroundImage="url('/images/sommarminglet-hero.jpg')"
+        backgroundSize="cover"
+        backgroundPosition="center"
+        display="flex"
+        flexDirection="column"
+        justifyContent="center"
+        alignItems="center"
+        color="white"
+        textAlign="center"
+      >
+        <Heading fontSize="6xl" mb={4}>Sommarminglet</Heading>
+        <Text fontSize="2xl">A summer celebration with sparkling wine</Text>
+      </Box>
+      <Container maxW="container.md" py={10}>
+        <VStack spacing={4} align="start">
+          <Heading as="h2" size="xl">Event Details</Heading>
+          <Text fontSize="lg">
+            Join us for Sommarminglet, a delightful summer event where you can enjoy sparkling wine and great company. The event will take place in a beautiful outdoor setting, perfect for soaking up the summer sun and creating unforgettable memories.
+          </Text>
+          <Text fontSize="lg">
+            <strong>Date:</strong> July 15, 2023
+          </Text>
+          <Text fontSize="lg">
+            <strong>Time:</strong> 3:00 PM - 9:00 PM
+          </Text>
+          <Text fontSize="lg">
+            <strong>Location:</strong> Summer Park, Main City
+          </Text>
+        </VStack>
+      </Container>
+    </Box>
   );
 };
 
