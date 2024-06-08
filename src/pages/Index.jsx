@@ -5,7 +5,7 @@ const Index = () => {
     <Box>
       <Box
         height="100vh"
-        backgroundImage="url('/images/sommarminglet-hero.jpg')"
+        backgroundImage="url('/images/sommarminglet-hero-unsplash.jpg')"
         backgroundSize="cover"
         backgroundPosition="center"
         display="flex"
