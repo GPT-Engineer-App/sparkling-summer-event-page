@@ -16,7 +16,7 @@ const Index = () => {
         textAlign="center"
       >
         <Heading fontSize="6xl" mb={4}>Sommarminglet</Heading>
-        <Text fontSize="2xl">A summer celebration with sparkling wine</Text>
+        <Text fontSize="2xl">Uniting Minds for a Better Future</Text>
       </Box>
       <Container maxW="container.md" py={10}>
         <VStack spacing={4} align="start">
